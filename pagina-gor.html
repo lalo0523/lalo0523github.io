@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <style>
+      /* Estilos de fondo animado */
+      body {
+        background: linear-gradient(to right, #800080, #22e6b5);
+        background-size: 200% 200%;
+        animation: moverFondo 10s infinite alternate ease-in-out;
+        font-family: 'Arial', sans-serif;
+        color: #FFFFFF;
+        overflow: hidden; /* Evita el scroll por las burbujas */
+      }
+
+      @keyframes moverFondo {
+        0% { background-position: 0% 0%; }
+        50% { background-position: 100% 100%; }
+        100% { background-position: 0% 0%; }
+      }
+
+      /* Estilos de texto */
+      h1, h2, h3 {
+        font-family: 'Georgia', serif;
+        color: #FFD700;
+      }
+
+      details {
+        font-family: 'Verdana', sans-serif;
+        color: #F0E68C;
+      }
+
+      li {
+        font-family: 'Courier New', monospace;
+        color: #87CEFA;
+      }
+
+      a {
+        color: #00FF00;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Burbujas animadas */
+      .burbuja {
+        position: absolute;
+        bottom: -50px;
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 75%;
+        animation: subirBurbuja 6s infinite ease-in-out;
+      }
+
+      @keyframes subirBurbuja {
+        0% { transform: translateY(0) scale(1); opacity: 1; }
+        50% { transform: translateY(-300px) scale(1.2); opacity: 0.7; }
+        100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
+      }
+
+      /* Generando múltiples burbujas */
+      .burbuja:nth-child(1) { left: 5%; animation-duration: 5s; }
+      .burbuja:nth-child(2) { left: 15%; animation-duration: 6s; }
+      .burbuja:nth-child(3) { left: 25%; animation-duration: 4s; }
+      .burbuja:nth-child(4) { left: 35%; animation-duration: 7s; }
+      .burbuja:nth-child(5) { left: 45%; animation-duration: 5.5s; }
+      .burbuja:nth-child(6) { left: 55%; animation-duration: 6.5s; }
+      .burbuja:nth-child(7) { left: 65%; animation-duration: 5s; }
+      .burbuja:nth-child(8) { left: 75%; animation-duration: 7.5s; }
+      .burbuja:nth-child(9) { left: 85%; animation-duration: 4.5s; }
+      .burbuja:nth-child(10) { left: 95%; animation-duration: 6s; }
+
+    </style>
+    <center>
+      <h1>Pagina Secundaria</h1>
+    </center>
+    <br>
+  </head>
+  <body>
+    <h2>Porque estudiar Ingenieria Mecanica</h2>
+    <details name="cookies">
+      <summary>Roma</summary>
+      <p>Historia</p>
+    </details>
+    <details name="cookies">
+      <summary>Primer semestre</summary>
+      <ul>
+        <li>Lengua y Comunicación I</li>
+        <li>Inglés I</li>
+        <li>Pensamiento Matemático I</li>
+        <li>Cultura Digital I</li>
+        <li>La Materia y sus Interacciones</li>
+        <li>Humanidades I</li>
+        <li>Ciencias Sociales I</li>
+      </ul>
+    </details>
+    <details name="cookies">
+      <summary>Segundo semestre</summary>
+      <ol>
+        <li>Ciencias sociales II</li>
+        <li>Conservación de la energía y sus Interacciones con la materia</li>
+        <li>Cultura digital II</li>
+        <li>Humanidades II</li>
+        <li>Inglés II</li>
+        <li>Lengua y comunicación II</li>
+        <li>Pensamiento matemático II</li>
+      </ol>
+    </details>
+    <details name="cookies">
+      <summary>Tercer semestre</summary>
+      <ol type="A">
+        <li>Lengua y comunicación III</li>
+        <li>Inglés III</li>
+        <li>Pensamiento matematico III</li>
+        <li>Ecosistemas: interacciones, energía y dinámica</li>
+        <li>Humanidades III</li>
+      </ol>
+    </details>
+    <p>Pagina web primaria <a href="file:///C:/Users/ALUMNO%2016/Desktop/hijo.html">$$$$</a></p>
+
+    <!-- Varias burbujas flotantes -->
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+  </body>
+</html>
